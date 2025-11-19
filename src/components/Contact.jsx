@@ -11,10 +11,12 @@ export default function Contact() {
             <div>
               <div className="text-sm uppercase tracking-widest text-sky-200/70">Email</div>
               <a className="block text-white font-medium hover:underline" href="mailto:raphaelnick940@gmail.com">raphaelnick940@gmail.com</a>
+              <a className="block text-white font-medium hover:underline mt-1" href="mailto:zachadesigns205@gmai.com">zachadesigns205@gmai.com</a>
             </div>
             <div>
               <div className="text-sm uppercase tracking-widest text-sky-200/70">Phone</div>
               <a className="block text-white font-medium hover:underline" href="tel:+233536340524">+233 536 340 524</a>
+              <a className="block text-white font-medium hover:underline mt-1" href="tel:+233532661209">+233 532 661 209</a>
             </div>
             <div>
               <div className="text-sm uppercase tracking-widest text-sky-200/70">Location</div>
@@ -26,7 +28,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
-            <motion.a href="mailto:raphaelnick940@gmail.com" className="px-5 py-3 rounded-lg bg-cyan-400 text-[#061021] font-semibold hover:bg-cyan-300 transition-colors" whileHover={{ y: -2 }}>
+            <motion.a href="mailto:raphaelnick940@gmail.com,zachadesigns205@gmai.com" className="px-5 py-3 rounded-lg bg-cyan-400 text-[#061021] font-semibold hover:bg-cyan-300 transition-colors" whileHover={{ y: -2 }}>
               Email us
             </motion.a>
             <motion.a href="https://wa.me/233536340524" target="_blank" className="px-5 py-3 rounded-lg border border-cyan-400/40 text-sky-200 hover:bg-cyan-400/10 transition-colors" whileHover={{ y: -2 }}>
