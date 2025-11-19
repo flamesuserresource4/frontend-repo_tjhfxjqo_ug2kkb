@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import Hero from './components/Hero'
 import Services from './components/Services'
 import Portfolio from './components/Portfolio'
@@ -5,9 +6,19 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Logo from './components/Logo'
 
+const fadeIn = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1, transition: { duration: 0.6 } }
+}
+
 function App() {
   return (
-    <div className="min-h-screen bg-slate-950 text-amber-50">
+    <motion.div
+      className="min-h-screen bg-slate-950 text-amber-50"
+      variants={fadeIn}
+      initial="hidden"
+      animate="show"
+    >
       {/* Header */}
       <header className="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-slate-950/60 bg-slate-950/80 border-b border-white/10">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -15,9 +26,9 @@ function App() {
             <Logo showWordmark={false} />
           </a>
           <nav className="hidden md:flex items-center gap-6 text-sm text-amber-100/80">
-            <a href="#services" className="hover:text-amber-100">Services</a>
-            <a href="#portfolio" className="hover:text-amber-100">Portfolio</a>
-            <a href="#about" className="hover:text-amber-100">About</a>
+            <a href="#services" className="hover:text-amber-100 transition-colors">Services</a>
+            <a href="#portfolio" className="hover:text-amber-100 transition-colors">Portfolio</a>
+            <a href="#about" className="hover:text-amber-100 transition-colors">About</a>
             <a href="#contact" className="px-3 py-1.5 rounded-lg bg-amber-400 text-slate-900 font-semibold hover:bg-amber-300 transition-colors">Contact</a>
           </nav>
         </div>
@@ -50,7 +61,7 @@ function App() {
           </div>
         </div>
       </footer>
-    </div>
+    </motion.div>
   )
 }
 

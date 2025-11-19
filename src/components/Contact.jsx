@@ -1,8 +1,10 @@
+import { motion } from 'framer-motion'
+
 export default function Contact() {
   return (
     <section id="contact" className="py-20 md:py-28">
       <div className="max-w-4xl mx-auto px-6">
-        <div className="rounded-2xl border border-white/10 bg-white/5 p-8">
+        <motion.div className="rounded-2xl border border-white/10 bg-white/5 p-8" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.6 }}>
           <h2 className="text-3xl md:text-4xl font-bold text-white">Let’s create something impactful</h2>
           <p className="mt-2 text-amber-100/80">Tell us about your project and we’ll get back within 24 hours.</p>
           <div className="mt-6 grid md:grid-cols-2 gap-6 text-amber-100/90">
@@ -24,10 +26,14 @@ export default function Contact() {
             </div>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href="mailto:raphaelnick940@gmail.com" className="px-5 py-3 rounded-lg bg-amber-400 text-slate-900 font-semibold hover:bg-amber-300 transition-colors">Email us</a>
-            <a href="https://wa.me/233536340524" target="_blank" className="px-5 py-3 rounded-lg border border-amber-400/40 text-amber-200 hover:bg-amber-400/10 transition-colors">WhatsApp</a>
+            <motion.a href="mailto:raphaelnick940@gmail.com" className="px-5 py-3 rounded-lg bg-amber-400 text-slate-900 font-semibold hover:bg-amber-300 transition-colors" whileHover={{ y: -2 }}>
+              Email us
+            </motion.a>
+            <motion.a href="https://wa.me/233536340524" target="_blank" className="px-5 py-3 rounded-lg border border-amber-400/40 text-amber-200 hover:bg-amber-400/10 transition-colors" whileHover={{ y: -2 }}>
+              WhatsApp
+            </motion.a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )
