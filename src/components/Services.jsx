@@ -21,7 +21,7 @@ export default function Services() {
         <motion.h2 className="text-3xl md:text-4xl font-bold text-white" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
           Services
         </motion.h2>
-        <motion.p className="mt-2 text-amber-100/80" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.1, duration: 0.5 }}>
+        <motion.p className="mt-2 text-sky-100/80" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.1, duration: 0.5 }}>
           A focused set of offerings for maximum impact.
         </motion.p>
         <div className="mt-10 grid md:grid-cols-3 gap-6">
@@ -36,7 +36,7 @@ export default function Services() {
               whileHover={{ y: -4, borderColor: 'rgba(255,255,255,0.2)' }}
             >
               <h3 className="text-xl font-semibold text-white">{it.title}</h3>
-              <p className="mt-2 text-amber-100/80">{it.desc}</p>
+              <p className="mt-2 text-sky-100/80">{it.desc}</p>
             </motion.div>
           ))}
         </div>

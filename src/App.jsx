@@ -14,22 +14,22 @@ const fadeIn = {
 function App() {
   return (
     <motion.div
-      className="min-h-screen bg-slate-950 text-amber-50"
+      className="min-h-screen bg-[#071126] text-sky-50"
       variants={fadeIn}
       initial="hidden"
       animate="show"
     >
       {/* Header */}
-      <header className="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-slate-950/60 bg-slate-950/80 border-b border-white/10">
+      <header className="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-[#071126]/60 bg-[#071126]/80 border-b border-white/10">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <a href="#" className="flex items-center">
             <Logo showWordmark={false} />
           </a>
-          <nav className="hidden md:flex items-center gap-6 text-sm text-amber-100/80">
-            <a href="#services" className="hover:text-amber-100 transition-colors">Services</a>
-            <a href="#portfolio" className="hover:text-amber-100 transition-colors">Portfolio</a>
-            <a href="#about" className="hover:text-amber-100 transition-colors">About</a>
-            <a href="#contact" className="px-3 py-1.5 rounded-lg bg-amber-400 text-slate-900 font-semibold hover:bg-amber-300 transition-colors">Contact</a>
+          <nav className="hidden md:flex items-center gap-6 text-sm text-sky-100/80">
+            <a href="#services" className="hover:text-sky-100 transition-colors">Services</a>
+            <a href="#portfolio" className="hover:text-sky-100 transition-colors">Portfolio</a>
+            <a href="#about" className="hover:text-sky-100 transition-colors">About</a>
+            <a href="#contact" className="px-3 py-1.5 rounded-lg bg-cyan-400 text-[#061021] font-semibold hover:bg-cyan-300 transition-colors">Contact</a>
           </nav>
         </div>
       </header>
@@ -49,14 +49,14 @@ function App() {
           <div className="flex items-center gap-3">
             <Logo showWordmark={true} />
           </div>
-          <div className="text-sm text-amber-200/80">
+          <div className="text-sm text-sky-200/80">
             <div className="space-y-1">
-              <p>Email: <a className="underline decoration-amber-400/60 hover:text-amber-100" href="mailto:raphaelnick940@gmail.com">raphaelnick940@gmail.com</a></p>
-              <p>Phone: <a className="underline decoration-amber-400/60 hover:text-amber-100" href="tel:+233536340524">+233 536 340 524</a></p>
+              <p>Email: <a className="underline decoration-cyan-400/60 hover:text-sky-100" href="mailto:raphaelnick940@gmail.com">raphaelnick940@gmail.com</a></p>
+              <p>Phone: <a className="underline decoration-cyan-400/60 hover:text-sky-100" href="tel:+233536340524">+233 536 340 524</a></p>
               <p>Location: Ghana — Accra</p>
             </div>
           </div>
-          <div className="text-xs text-amber-200/60">
+          <div className="text-xs text-sky-200/60">
             © {new Date().getFullYear()} ZAAZH & CO. All rights reserved.
           </div>
         </div>
